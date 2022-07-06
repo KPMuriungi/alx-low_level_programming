@@ -15,11 +15,11 @@ void times_table(void)
 		for (y = 0; y < 10; y++)
 		{
 			z = x * y;
-			if (z == 0)
+			if (y == 0)
 			{
 				_putchar(z + '0');
 			}
-			if (z < 10 && z != 0)
+			if (z < 10 && y != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
