@@ -10,27 +10,14 @@ void times_table(void)
 {
 	int x, y, z;
 
-	x = 0;
-
-	while (x < 10)
+	for (x = 0; x < 10; x ==)
 	{
-		y = 0;
-		while (y < 10)
+		for (y = 0; y < 10; y++)
 		{
 			z = x * y;
 			if (z == 0)
 			{
-				if (y < 9)
-				{
-					_putchar(z + '0');
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else
-				{
-					_putchar(z + '0');
-				}
+				_putchar(z + '0');
 			}
 			else if (z < 10 && z != 0)
 			{
@@ -46,9 +33,7 @@ void times_table(void)
 				_putchar((z / 10) + '0');
 				_putchar((z % 10) + '0');
 			}
-		y++;
 		}
 		_putchar('\n');
-		x++;
 	}
 }
