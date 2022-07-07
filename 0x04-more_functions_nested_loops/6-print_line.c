@@ -10,9 +10,9 @@
 
 void print_line(int n)
 {
-	char c;
+	int i;
 
-	for (c = 0 ; c < n ; c++)
+	for (i = 0 ; i < n ; i++)
 	{
 		if (n <= 0)
 		{
