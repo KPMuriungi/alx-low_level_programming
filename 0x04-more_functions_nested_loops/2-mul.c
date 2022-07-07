@@ -7,14 +7,10 @@
  *
  * @b: Parameter
  *
- * Return: 0
+ * Return: Product
  */
 
 int mul(int a, int b)
 {
-	int c;
-
-	c = a * b;
-
-	return (0);
+	return (a * b);
 }
