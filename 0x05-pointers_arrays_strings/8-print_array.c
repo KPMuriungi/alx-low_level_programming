@@ -1,8 +1,8 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- *  _puts - prints an array
+ *  print_array - prints an array
  *
  * @a: Array pointer
  *
@@ -26,5 +26,6 @@ void print_array(int *a, int n)
 			printf(", %d", a[i]);
 		}
 	}
+
 	printf("\n");
 }
