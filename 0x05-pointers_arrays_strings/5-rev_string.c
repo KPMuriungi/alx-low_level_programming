@@ -11,6 +11,7 @@
 void print_rev(char *s)
 {
 	int i, j, k;
+	char r[j];
 
 	i = 0;
 	j = 0;
