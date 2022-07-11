@@ -24,6 +24,7 @@ void print_rev(char *s)
 
 	for (j = 0; j <= i; j++)
 	{
+		
 		r[j] = s[i];
 		i--;
 	}
