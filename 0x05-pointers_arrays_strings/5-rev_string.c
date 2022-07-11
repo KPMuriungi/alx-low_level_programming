@@ -11,7 +11,6 @@
 void print_rev(char *s)
 {
 	int i, j, k;
-	char r[];
 
 	i = 0;
 	j = 0;
@@ -21,11 +20,14 @@ void print_rev(char *s)
 		i++;
 	}
 	i--;
+	k=i;
+	char r[k];
 
-	for (j = 0; j <= i; j++)
+	for (j = 0; j <= k; j++)
 	{
-		r[j] = s[i];
+		r[j] = s[k];
 		i--;
 	}
+
 	r[j] = '\0';
 }
