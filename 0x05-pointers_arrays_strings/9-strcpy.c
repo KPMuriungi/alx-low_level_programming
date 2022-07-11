@@ -9,7 +9,7 @@
  * Return: dest
  */
 
-void *_strcpy(char *dest, char *srr)
+char *_strcpy(char *dest, char *srr)
 {
 	int i, j;
 
