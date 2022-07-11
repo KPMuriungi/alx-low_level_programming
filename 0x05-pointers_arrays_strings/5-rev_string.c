@@ -29,6 +29,4 @@ void print_rev(char *s)
 		s[i] = tmp;
 		i--;
 	}
-
-	r[j] = '\0';
 }
