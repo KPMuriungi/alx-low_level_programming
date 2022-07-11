@@ -11,7 +11,7 @@
 void print_rev(char *s)
 {
 	int i, j;
-	char r[1000];
+	char tmp;
 
 	i = 0;
 	j = 0;
@@ -24,8 +24,9 @@ void print_rev(char *s)
 
 	for (j = 0; j <= i; j++)
 	{
-		
-		r[j] = s[i];
+		tmp = s[j];
+		s[j] = s[i];
+		s[i] = tmp;
 		i--;
 	}
 
