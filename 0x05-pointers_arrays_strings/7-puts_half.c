@@ -10,27 +10,28 @@
 
 void puts_half(char *str)
 {
-	int i, n;
+	int i, j, n;
 
-	i = 0;
+	j = 0;
 
 	while (*str != '\0')
 	{
 		str++;
-		i++;
+		j++;
 	}
+	
+	i = j;
 
 	if (i % 2 == 0)
 	{
-		for (n = (i / 2); str[n] != '\0'; n++)
+		for (n = i / 2; n < i; n++)
 		{
 			_putchar(str[n]);
 		}
-
 	}
 	else
 	{
-		for (n = ((i + 1) / 2); str[n] != '\0'; n++)
+		for (n = (i + 1) / 2; n < i; n++)
 		{
 			_putchar(str[n]);
 		}
