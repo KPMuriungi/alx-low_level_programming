@@ -1,16 +1,18 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates two strings
+ * *_strncat - concatenates two strings
  *
  * @dest: String pointer
  *
- * @src: String point
+ * @src: String pointer
+ *
+ * @n: parameter
  *
  * Return: dest
  */
 
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
