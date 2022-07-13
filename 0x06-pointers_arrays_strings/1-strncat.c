@@ -10,7 +10,7 @@
  * Return: dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src, int n)
 {
 	int i, j;
 
@@ -21,7 +21,7 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 
-	for (j = 0; src[j] != '\0'; j++)
+	for (j = 0; j < n && src[j] != '\0'; j++)
 	{
 		dest[i + j] = src[j];
 	}
