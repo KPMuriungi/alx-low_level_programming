@@ -23,6 +23,7 @@ char *rot13(char *s)
 			if (s[i] == x[j])
 			{
 				s[i] = y[j];
+				break;
 			}
 		}
 	}
