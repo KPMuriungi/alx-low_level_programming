@@ -9,29 +9,31 @@
  *
  */
 
-char cap_string(char *s)
+char *cap_string(char *s)
 {
-	int i;
+	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		j = i - 1;
+
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
 			if (i == 0)
 			{
 				s[i] = s[i] - 32;
 			}
-			else if (s[i] == 9 || s[i] == 10 || s[i] == 40 || s[i] == 41 || s[i] == 44)
+			else if (s[j] == 9 || s[j] == 10 || s[j] == 40 || s[j] == 41 || s[j] == 44)
 			{
-				s[i + 1] = s[i + 1] - 32;
+				s[i] = s[i] - 32;
 			}
-			else if (s[i] >= 32 && s[i] <= 34)
+			else if (s[j] >= 32 && s[j] <= 34)
 			{
-				s[i + 1] = s[i + 1] - 32;
+				s[i] = s[i] - 32;
 			}
-			else if (s[i] == 46 || s[i] == 59 || s[i] == 123 || s[i] == 125)
+			else if (s[j] == 46 || s[j] == 59 || s[j] == 123 || s[j] == 125)
 			{
-				s[i + 1] = s[i + 1] - 32;
+				s[i] = s[i] - 32;
 			}
 		}
 	}
