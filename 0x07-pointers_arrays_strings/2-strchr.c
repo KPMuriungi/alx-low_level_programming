@@ -22,6 +22,7 @@ char *_strchr(char *s, char c)
 	{
 		n++;
 	}
+	n--;
 
 	while (i < n)
 	{
