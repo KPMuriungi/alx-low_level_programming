@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * *_strpbrk - function that copies the n bytes from memory area src to dest
@@ -12,9 +13,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, j, n;
-
-	n = 0;
+	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
@@ -27,4 +26,5 @@ char *_strpbrk(char *s, char *accept)
 			return (NULL);
 		}
 	}
+	return (0);
 }
