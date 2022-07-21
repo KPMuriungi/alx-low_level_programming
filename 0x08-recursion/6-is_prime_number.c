@@ -14,7 +14,7 @@ int check_prime(int num, int x)
 {
 	if (num % x == 0 )
 	{
-		if (n == x)
+		if (num == x)
 		{
 			return (1);
 		}
