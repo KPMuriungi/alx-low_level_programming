@@ -12,9 +12,16 @@
 
 int check_prime(int num, int x)
 {
-	if (num % x == 0 && x > 1)
+	if (num % x == 0 )
 	{
-		return (0);
+		if (n == x)
+		{
+			return (1);
+		}
+		else
+		{
+			return (0);
+		}
 	}
 	return (check_prime(num, x + 1));
 }
