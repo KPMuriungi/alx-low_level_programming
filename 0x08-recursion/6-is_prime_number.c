@@ -31,11 +31,11 @@ int is_prime_number(int n)
 {
 	int x;
 
-	x = 1;
+	y = 1;
 
 	if (n <= 1)
 	{
 		return (0);
 	}
-	return (check_prime(n, x + 1));
+	return (check_prime(n, y + 1));
 }
