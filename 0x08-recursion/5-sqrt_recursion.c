@@ -54,6 +54,6 @@ int _sqrt_recursion(int n)
 	}
 	else
 	{
-		return (check_int(n, start));
+		return (check_square(n, start));
 	}
 }
