@@ -37,5 +37,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (check_prime(n, y + 1));
+	return (check_prime(n, y));
 }
