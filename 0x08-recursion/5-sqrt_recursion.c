@@ -18,11 +18,11 @@ int check_square(int square, int x)
 	}
 	else if (x > square / x)
 	{
-		return (check_int(square, x - 1));
+		return (check_square(square, x - 1));
 	}
 	else if (x < square / x)
 	{
-		return (check_int(square, x + 1));
+		return (check_square(square, x + 1));
 	}
 	else
 	{
