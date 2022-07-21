@@ -29,7 +29,7 @@ int check_prime(int num, int x)
 
 int is_prime_number(int n)
 {
-	int x;
+	int y;
 
 	y = 1;
 
