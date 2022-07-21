@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_chessboard - function that copies the n bytes from memory area src to dest
+ * print_chessboard - function that prints the chessboard
  *
  * @a: String pointer
  *
