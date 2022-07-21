@@ -12,7 +12,7 @@
 
 int check_prime(int num, int x)
 {
-	if (num % x == 0 )
+	if (num % x == 0)
 	{
 		if (num == x)
 		{
@@ -44,5 +44,5 @@ int is_prime_number(int n)
 	{
 		return (0);
 	}
-	return (check_prime(n, y));
+	return (check_prime(n, y + 1));
 }
