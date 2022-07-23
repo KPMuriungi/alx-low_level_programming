@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
 /**
  * main - function
@@ -14,19 +13,51 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int x, cents, coins;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (i = 1; i < argc; i++)
+	if (atoi(argv[1]) < 0)
 	{
-		if (atoi(argv[i]) < 0)
-		{
-			printf("0\n");
-		}
+		printf("0\n");
 	}
+	cents = atoi(argv[1]);
+	coins = 0;
+
+	if (cents >= 25)
+	{
+		x = cents / 25;
+		cents = cents % 25;
+		coins += x;
+	}
+	if (cents >= 10 && cents < 25)
+	{
+		x = cents / 10;
+		cents = cents % 10;
+		coins += x;
+	}	
+	if (cents >= 5 && cents < 10)
+	{
+		x = cents / 5;
+		cents = cents % 5;
+		coins += x;
+	}
+	if (cents >= 2 && cents < 5)
+	{
+		x = cents / 2;
+		cents = cents % 2;
+		coins += x;
+	}
+	if (cents == 1)
+	{
+		x = cents;
+		coins += x;
+	}
+
+	printf("%d\n", coins);
+
 	return (0);
 }
