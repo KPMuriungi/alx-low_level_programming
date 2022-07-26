@@ -14,7 +14,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int length1, length2, length3, i;
-	char *arr;
+	char *str;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -35,15 +35,15 @@ char *str_concat(char *s1, char *s2)
 
 	length3 = length1 + length2;
 
-	arr = malloc((sizeof(char) * length3) + 1);
+	str = malloc((sizeof(char) * length3) + 1);
 
-	if (arr == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	for (i = 0; i < length1; i++)
-		arr[i] = s1[i];
+		str[i] = s1[i];
 	for (i = 0; i < length2; i++)
-		arr[i + length1] = s2[i];
+		str[i + length1] = s2[i];
 
-	return (arr);
+	return (str);
 }
